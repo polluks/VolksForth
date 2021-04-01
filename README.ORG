@@ -1,0 +1,41 @@
+#+Title: VolksForth Readme
+
+VolksForth is a 16bit Forth System produced by the German Forth
+Gesellschaft e.V.
+
+Major development of this system was done between 1985 until 1989. The
+VolksForth Project was revived in 2005 with the goal to produce a
+managable Forthsystem for computer systems with restricted system
+resources.
+
+Some modern Forth Systems were influenced by or were derived from
+VolksForth (GNU-Forth, bigForth).
+
+The current Version of VolksForth is 3.81. Version 3.9.x will be
+interim versions on the way to sync all VolksForth targets and move
+towards compliance with the 2012 Forth standard.
+
+Version 3.8.x is based on the Forth 83 standard, Version 4.00 will be
+based on the current 2012 Standard (https://forth-standard.org).
+
+At this time VolksForth is available for this Systems:
+
+ * VolksForth MS-DOS (Intel x86 architecture i8086/i186/i286/i386/i486 etc)
+ * VolksForth 6502 (Commodore 64, Commodore Plus 4, Commander X16, Apple 1, Apple ][, Atari XL/XE)
+ * VolksForth Z80 (CP/M, Schneider CPC)
+ * VolksForth 68000 (Atari ST, Amiga with EmuTOS)
+
+* Copyright
+
+The VolksForth Sources are made available under the terms of the
+BSD Lizenz - http://www.opensource.org/licenses/bsd-license.php
+
+The Handbook is Copyright (c) 1985 - 2020 Forth Gesellschaft e.V. (
+Klaus Schleisiek, Ulrich Hoffmann, Bernd Pennemann, Georg Rehfeld,
+Dietrich Weineck, Carsten Strotmann).
+
+(most of the Information is still in german. We are planning to
+provide future versions with englisch documentation)
+
+Have fun with VolksForth
+the VolksForth Team

@@ -1,0 +1,43 @@
+#+TITLE: VolksForth MS-DOS README
+#+AUTHOR: Carsten Strotmann
+#+DATE: <2020-06-19 Fri>
+
+* How to meta-compile a new kernel
+
+  After making changes the the Forth kernel source in =kernel.fb=,
+  restart =volksforth.com= to have a clean system and compile a new
+  "minimal" kernel with =include kernel.fb=. This will create a new
+  =FORTH.COM= executable.
+
+* creating a minimal system with a simple editor
+
+  Execute =forth.com include minimal.sys= to generate the file
+  =minimal.com= which contains a minimal VolksForth system with the
+  Retro-Forth editor
+  https://fossil.forth-ev.de/volksforth/wiki?name=Atari8bit-retrofortheditor
+
+  This system can be used to edit the file =volksforth.sys= or other
+  Forth source block files needed to create a full VolksForth system.
+
+* creating a full VolksForth system from the minimal kernel
+
+  Execute =forth.com include volks4th.sys= to create a new fully
+  equipped VolksForth executable =volks4th.com=.
+* creating a version of VolksForth that works with emu2
+
+  EMU2 is a nice PC Emulator that can run MS-DOS console applications
+  as Linux/MacOS/Windows console applications. EMU2 can be found at
+  https://github.com/dmsc/emu2
+
+  The standard Keyboard-Interface of VolksForth (BDOS) does not work
+  with EMU2, however it is possible to switch to the simpler BIOS
+  keyboard interface. For that, comment out the blocks #114 and #115
+  by placing =\\= at the beginning of the first row of these blocks
+  and comment in block #116 by changing the =\\= in the first row to
+  =\=. (=\= is "skip to end of line" comment, while =\\= is the "skip
+  to end of current block" commend).
+
+  The downside of this change is that the VolksForth full screen
+  editor does not work anymore, as the BIOS interface does not support
+  special keys like cursor or function keys. As a replacement, the
+  Retro-Forth Editor =rfe.fb= or some other Forth Editor can be used.
